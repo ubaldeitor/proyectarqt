@@ -8,7 +8,7 @@ const Portafolio = ()=>{
                 <Paper>
                     <div>
                         <h1>Portafolios.</h1>
-                        <p>Estos son algunas de los proyectos que ArquiProyect ha ayudado a diseñar:</p>
+                        <p>Estos son algunas de los proyectos que <b>ArquiProyect</b> ha ayudado a diseñar:</p>
                     </div>
                 </Paper>
             </Grid>

@@ -12,6 +12,10 @@ const useStyles = makeStyles(theme => ({
     title: {
       flexGrow: 1,
     },
+    toolbar:{
+      backgroundColor: '#ffffff',
+      color: theme.palette.primary.dark
+    }
   }));
 
 const Header =  () => {
@@ -20,7 +24,7 @@ const Header =  () => {
         <div className={classes.root}>
           <AppBar position="static">
             <Toolbar>
-                <Typography className={classes.title} variant="h6" color="inherit">ArquiProyect</Typography>
+                <Typography className={classes.title} variant="h6" color="#3f51b5">ArquiProyect</Typography>
                 <Button color="inherit">Inicio</Button>
                 <Button color="inherit">Servicios</Button>
                 <Button color="inherit">Portafolio</Button>

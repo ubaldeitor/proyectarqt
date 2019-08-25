@@ -31,13 +31,13 @@ const QuienSoy = () => {
           <Paper className={classes.paper}>
             <div>
               <h1 className={classes.title}>¿Qué es ArquiProyect?</h1>
-              <p className={classes.paragraph}>ArquiProyect es arquitectura al alcance de todos. Contar con un arquitecto desde el inicio del proyeco 
-              de construcción significa: contar con planos y guías acordes con normas y mejores prácticas, más plusvalia
+              <p className={classes.paragraph}><b>ArquiProyect</b> es arquitectura al alcance de todos. Contar con un arquitecto desde el inicio del proyeco 
+              de construcción significa: contar con <b>planos y guías</b> acordes con normas y mejores prácticas, más plusvalia
               para tu vivienda, más oportunidades de modificaciones o ampliaciones para tu casa al contar con planos 
               y guías de construcción adecauadas y la capacidad de hacer un presupuesto más acertado pues, al contar con
               tus planos, podrás hacer una estimación mejor de materiales y trabajadores. 
 
-              En ArquiProyect tus planos y tu proyecto constructivo ¡Va!. 
+              En <b>ArquiProyect</b> tus planos y tu proyecto constructivo ¡Va!. 
               </p>
             </div>
           </Paper>

@@ -21,7 +21,7 @@ const Servicios = () =>{
                         <p>Dentro de los servicios que podemos ejecutar están: volumetría, análisis de áreas, distribución
                         de plantas arquitectónicas, desarrollo final de plantas arquitectónicas, fachada y cortes arquitectónicos
                         Memoria del proyecto en archivos digitales.</p>
-                        <p>Tenemos paquetes desde $3,500 pesos. Llama ahora y platícanos de tu proyecto arquitectónico.</p>
+                        <p>Tenemos <b>paquetes</b> desde <b>$3,500 pesos</b>. Llama ahora y platícanos de tu proyecto arquitectónico.</p>
                     </div>
                 </Paper>
             </Grid>
