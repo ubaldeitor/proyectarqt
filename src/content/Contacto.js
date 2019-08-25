@@ -7,8 +7,15 @@ const Contacto = () => {
             <Grid item sm={6}>
                 <Paper>
                     <div>
-                        <h1>Cuéntame de tu proyecto</h1>
+                        <h1>Cuéntanos de tu proyecto arquitectónico</h1>
                         <p>LLena los siguentes datos:</p>
+                        <div>
+                            <label>Nombre:</label>
+                            <label>Email:</label>
+                            <label>Teléfono de contacto:</label>
+                            <label>Descripción del proyecto:</label>
+                            <button>Enviar</button>
+                        </div>
                     </div>
                 </Paper>
             </Grid>

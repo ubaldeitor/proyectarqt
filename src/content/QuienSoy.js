@@ -8,9 +8,15 @@ const useStyles = makeStyles(theme => ({
   },
   paper: {
     padding: theme.spacing(2),
-    textAlign: "center",
-    color: theme.palette.text.secondary
+    textAlign: "center"
+  },
+  title: {
+    color: theme.palette.text.primary
+  },
+  paragraph:{
+    color: theme.palette.text.primary
   }
+
 }));
 
 const QuienSoy = () => {
@@ -24,19 +30,14 @@ const QuienSoy = () => {
         <Grid item sm={6}>
           <Paper className={classes.paper}>
             <div>
-              <h1>¿Quien soy?</h1>
-              <p>
-                Mi nombre es Lenia Godínez, soy arquitecta egresada por la UNAM.
-                Me encanta el diseño de espacios y el dibujo. Disfruto ayudar a
-                las personas a optimizar los espacios porque se, que una casa
-                bien planeada será un espacio donde el amor florecerá.
-              </p>
-              <p>
-                Amo pasar el tiempo dibujando, leyendo y jugando con mis hijos.
-              </p>
-              <p>
-                Si tienes en mente un proyecto, déjame ayudarte a que esa idea
-                se convierta en realidad.
+              <h1 className={classes.title}>¿Qué es ArquiProyect?</h1>
+              <p className={classes.paragraph}>ArquiProyect es arquitectura al alcance de todos. Contar con un arquitecto desde el inicio del proyeco 
+              de construcción significa: contar con planos y guías acordes con normas y mejores prácticas, más plusvalia
+              para tu vivienda, más oportunidades de modificaciones o ampliaciones para tu casa al contar con planos 
+              y guías de construcción adecauadas y la capacidad de hacer un presupuesto más acertado pues, al contar con
+              tus planos, podrás hacer una estimación mejor de materiales y trabajadores. 
+
+              En ArquiProyect tus planos y tu proyecto constructivo ¡Va!. 
               </p>
             </div>
           </Paper>

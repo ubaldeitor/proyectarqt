@@ -10,8 +10,8 @@ const FrontPage = ()=>{
         <Fragment>
             <QuienSoy />
             <Servicios />
-            <Portafolio />
             <Contacto />
+            <Portafolio />
             <Footer />
         </Fragment>
     );

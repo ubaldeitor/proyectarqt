@@ -7,8 +7,8 @@ const Portafolio = ()=>{
             <Grid item sm={12}>
                 <Paper>
                     <div>
-                        <h1>Algunos de mis proyectos</h1>
-                        <p>Estos son algunas de las casa que he ayudado a diseñar:</p>
+                        <h1>Portafolios.</h1>
+                        <p>Estos son algunas de los proyectos que ArquiProyect ha ayudado a diseñar:</p>
                     </div>
                 </Paper>
             </Grid>
