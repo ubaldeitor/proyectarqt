@@ -8,7 +8,8 @@ const useStyles = makeStyles(theme => ({
   },
   paper: {
     padding: theme.spacing(2),
-    textAlign: "center"
+    textAlign: "center",
+    backgroundColor: theme.palette.grey[100]
   },
   title: {
     color: theme.palette.text.primary

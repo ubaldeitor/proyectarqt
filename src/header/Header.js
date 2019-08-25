@@ -5,25 +5,23 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => ({
     root: {
       flexGrow: 1,
+      background: "white",
+      color: "#3f51b5"
     },
     menuButton: {
       marginRight: theme.spacing(2),
     },
     title: {
       flexGrow: 1,
-    },
-    toolbar:{
-      backgroundColor: '#ffffff',
-      color: theme.palette.primary.dark
     }
   }));
 
 const Header =  () => {
     const classes = useStyles();
     return(
-        <div className={classes.root}>
+        <div>
           <AppBar position="static">
-            <Toolbar>
+            <Toolbar className={classes.root}>
                 <Typography className={classes.title} variant="h6" color="#3f51b5">ArquiProyect</Typography>
                 <Button color="inherit">Inicio</Button>
                 <Button color="inherit">Servicios</Button>
