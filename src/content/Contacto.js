@@ -7,6 +7,11 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     flexWrap: "wrap"
   },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: "center",
+    backgroundColor: theme.palette.grey[100]
+  },
   textField: {
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(1)
@@ -19,7 +24,9 @@ const useStyles = makeStyles(theme => ({
 const Contacto = () => {
   const classes = useStyles();
   const [values, setValues] = React.useState({
-    name: "Client Name"
+    name: "Client Name",
+    email:"correo@micorreo.com",
+    description:"Descripcion proyecto"
   });
 
   const handleChange = name => event => {
@@ -28,7 +35,7 @@ const Contacto = () => {
   return (
     <Grid container>
       <Grid item sm={6}>
-        <Paper>
+        <Paper className={classes.paper}>
           <div>
             <h1>Cuéntanos de tu proyecto arquitectónico</h1>
             <p>LLena los siguentes datos:</p>
@@ -40,6 +47,24 @@ const Contacto = () => {
                   className={classes.textField}
                   value={values.name}
                   onChange={handleChange("name")}
+                  margin="normal"
+                  variant="outlined"
+                />
+                <TextField
+                  id="email-cliente"
+                  label="Correo Electrónico"
+                  className={classes.textField}
+                  value={values.email}
+                  onChange={handleChange("email")}
+                  margin="normal"
+                  variant="outlined"
+                />
+                <TextField
+                  id="descripcion"
+                  label="Descripción Proyecto"
+                  className={classes.textField}
+                  value={values.description}
+                  onChange={handleChange("description")}
                   margin="normal"
                   variant="outlined"
                 />

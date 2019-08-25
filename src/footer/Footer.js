@@ -1,47 +1,33 @@
 import React from "react";
-import {Paper, Grid} from "@material-ui/core";
+import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
+import { mdiFacebook, mdiTwitter, mdiInstagram, mdiPinterest, mdiGooglePlus } from '@mdi/js';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles({
   root: {
-    flexGrow: 1
+    width: 500,
   },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'left',
-    backgroundColor: theme.palette.primary.dark
-  },
-  footer: {
-    backgroundColor: theme.palette.primary.dark
-  },
-  title:{
-    color: 'white'
-  },
-  paragraph:{
-    color: '#F5E3FD'
-  }
-
-}));
+});
 
 const Footer = () => {
   const classes = useStyles();
+  const [value, setValue] = React.useState(0);
+
   return (
-    <Grid container>
-      <Grid item sm={12}>
-        <Paper className={classes.paper}>
-          <div className={classes.footer}>
-          <h1 className={classes.title}>Síguenos en nuestras redes sociales:</h1>
-            <ul className={classes.paragraph}>
-              <li>Facebook</li>
-              <li>Twitter</li>
-              <li>Instagram</li>
-              <li>Pinterest</li>
-              <li>Google+</li>
-            </ul>
-          </div>
-        </Paper>
-      </Grid>
-    </Grid>
+    <BottomNavigation
+      value={value}
+      onChange={(event, newValue) => {
+        setValue(newValue);
+      }}
+      showLabels
+      className={classes.root}
+    >
+      <BottomNavigationAction label="Facebook" icon={<mdiFacebook />} />
+      <BottomNavigationAction label="Twitter" icon={<mdiTwitter />} />
+      <BottomNavigationAction label="Instagram" icon={<mdiInstagram />} />
+      <BottomNavigationAction label="Pinterest" icon={<mdiPinterest />} />
+      <BottomNavigationAction label="Google +" icon={<mdiGooglePlus />} />
+    </BottomNavigation>
   );
 };
 
